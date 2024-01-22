@@ -82,7 +82,7 @@ test_in_matlab/spad.m
 ```
 python test_gaussian.py 
 ```
-- To obtain PSNR/SSIM, run 
+- To obtain PSNR, run 
 ```
 python evaluate_gaussian.py
 ```
