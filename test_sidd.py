@@ -50,7 +50,7 @@ with torch.no_grad():
         for k in range(32):
             noisy_patch = torch.from_numpy(Inoisy[i,k,:,:,:]).unsqueeze(0).permute(0,3,1,2).cuda()
             _,_,h,w = noisy_patch.shape
-            factor = 64
+            factor = 32
             H,W = ((h+factor)//factor)*factor,((w+factor)//factor)*factor
             padh = H-h if h%factor!=0 else 0
             padw = W-w if w%factor!=0 else 0
