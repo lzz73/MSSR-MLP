@@ -74,7 +74,7 @@ python test.py
 ```
 - To obtain PSNR/SSIM, run
 ```
-test_in_matlab/sidd.m
+test_in_matlab/spad.m
 ```
 
 #### Testing on Set12 and BSD68(image gray-scale gaussian denoising task) datasets
