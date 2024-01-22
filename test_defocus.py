@@ -62,7 +62,7 @@ with torch.no_grad():
         patchR = torch.from_numpy(imgR).unsqueeze(0).permute(0,3,1,2)
 
         input_ = torch.cat([patchL, patchR], 1).cuda()
-        factor = 64
+        factor = 32
         h,w = input_.shape[2],input_.shape[3]
         H,W = ((h+factor)//factor)*factor,((w+factor)//factor)*factor
         padh = H-h if h%factor!=0 else 0
