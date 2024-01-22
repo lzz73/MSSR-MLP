@@ -11,11 +11,11 @@ python -m visdom.server -port 4567
 ```
 
 ### Start training
-- To train the model in image motion deblurring and image dehazing(indoor) tasks, please run 
+- To train the model in image motion deblurring and image dehazing(indoor) tasks, or you want to train the model by epochs, please run 
 ```
 python train_epoch.py
 ```
-- To train the model in image defocus deblurring task, or you want to train the model by epochs, please run
+- To train the model in image defocus deblurring task, please run
 ```
 python train_defocus.py
 ```
