@@ -17,7 +17,7 @@ TRAIN:
   VAL_FRE:   250          ## epoch frequency of val
   SAVE_IMG: false         ## val nseed save images?
   
-  RESUME:    true       ## resume? true or false
+  RESUME:    false       ## resume? true or false
   PRETRAIN_MODEL: model_latest.pth       ## pretrain_model: latested or epoch_num
   TRAIN_PS:  256          ## patchsize of train
   VAL_PS:                 ## patchsize of val
