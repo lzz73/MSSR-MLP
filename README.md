@@ -3,7 +3,7 @@
 - Different restoration tasks may require different training hyper-parameters. Please train the model with the arguments mentioned in the paper(An Efficient Multiscale Spatial Rearrangement MLP Architecture for Image Restoration) in different restoration tasks.
 
 ### Modify the way of data preprocessing
-- You need to replace the name of 'from utils.dataset_RGB import ...' with 'from utils.dataset_RGB_xxxx import ...' in utils/data_RGB.py when you are conducting the training of image defocus deblurring, image dehazing, image deraining and image gray-scale gaussian denoising tasks, as listed in utils.
+- You need to replace the name of 'from utils.dataset_RGB import ...' with 'from utils.dataset_RGB_xxxx import ...' in utils/data_RGB.py when you are conducting the training or testing of image defocus deblurring, image dehazing, image deraining and image gray-scale gaussian denoising tasks, as listed in utils.
 
 ### Before training the model, you need to open the visdom server in another command window to visualize the restoration results, please run
 ```
