@@ -38,7 +38,7 @@ python train_sidd.py
 
 ### Start evaluating
 - You also need to prepare the testing dataset in the corresponding image restoration tasks
-#### Testing on GoPro¡¢HIDE and SOTS(indoor, outdoor) datasets
+#### Testing on GoPro HIDE and SOTS(indoor, outdoor) datasets
 - you just need to provide the weight and change the path of the dataset in the test.yml, and run
 ```
 python test.py
