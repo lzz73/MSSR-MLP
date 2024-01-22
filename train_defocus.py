@@ -221,7 +221,7 @@ for epoch in range(start_epoch, opt['TRAIN']['TOTAL_EPOCHS'] + 1):
             for ii, data_val in enumerate(tqdm(val_loader), 1):
                 target = data_val[0].numpy().squeeze().transpose((1,2,0))
                 input_ = data_val[1].cuda()
-                factor = 64
+                factor = 32
                 h,w = input_.shape[2],input_.shape[3]
                 H,W = ((h+factor)//factor)*factor,((w+factor)//factor)*factor
                 padh = H-h if h%factor!=0 else 0
