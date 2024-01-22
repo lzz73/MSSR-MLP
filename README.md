@@ -88,4 +88,4 @@ python evaluate_gassuian.py
 ```
 
 ## Results 
-### Restoration results in each restoration task will be released soon # MSSR-MLP
+### Restoration results in each restoration task will be released soon 
