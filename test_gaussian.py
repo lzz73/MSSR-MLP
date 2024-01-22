@@ -54,7 +54,7 @@ model_restoration = nn.DataParallel(model_restoration)
 model_restoration.eval()
 
 
-datasets = ['Set12', 'BSD68', 'Urban100']
+datasets = ['Set12', 'BSD68']
 input_dir = opt['PATH']['VAL_DATASET']
 
 print("Compute results for noise level",sigma_test)
