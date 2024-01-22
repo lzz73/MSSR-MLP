@@ -116,7 +116,7 @@ dir_name = os.path.dirname(os.path.abspath(__file__))
 log_dir = os.path.join(dir_name, 'log', opt['MODEL']['NAME'] + '_' + opt['MODEL']['MODE'])
 sigma_test = 15
 val_iter = 1000
-datasets = ['Set12', 'BSD68', 'Urban100']
+datasets = ['Set12', 'BSD68']
 
 for dataset in datasets:
 
