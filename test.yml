@@ -1,0 +1,17 @@
+###############
+GPU: [0]
+
+MODEL:
+  NAME: UNet
+  MODE: mlp  #
+  ARGS: 
+
+VAL:  
+  PRETRAIN_MODEL: model_epoch_3000.pth       ## pretrain_model: latested or epoch_num
+  VAL_PS:  ~             ## patchsize of val
+  SAVE_IMG: false
+
+PATH:
+  VAL_DATASET: /home/hua/Code/lzz/GoPro_diff_order_trainset/test
+
+

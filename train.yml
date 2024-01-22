@@ -1,0 +1,43 @@
+###############
+GPU: [0]
+PORT: 4567
+MODEL:
+  NAME: UNet
+  MODE: mlp  #
+  ARGS:
+
+TRAIN:
+  TOTAL_EPOCHS: 3000
+  BATCH_SIZE: 4
+
+  PRINT_FRE: 60             ## iter frequency of print
+  SAVE: 1000                 ## when to start save checkpoints
+  SAVE_FRE:  1             ## epoch frequency of save checkpoints
+  VAL: 500                  ##when to val
+  VAL_FRE:   250          ## epoch frequency of val
+  SAVE_IMG: false         ## val nseed save images?
+  
+  RESUME:    true       ## resume? true or false
+  PRETRAIN_MODEL: model_latest.pth       ## pretrain_model: latested or epoch_num
+  TRAIN_PS:  256          ## patchsize of train
+  VAL_PS:                 ## patchsize of val
+  
+  LR_RANGE: 0              ##when to start lr_decay
+
+PATH:
+  TRAIN_DATASET: /home/hua/Code/lzz/GoPro_diff_order_trainset/train
+  VAL_DATASET: /home/hua/Code/lzz/GoPro_diff_order_trainset/test
+
+
+# Optimization arguments.
+OPTIM:  #default AdamS
+  lr: !!float 1e-3
+  betas: [0.9, 0.999]
+  eps: !!float 1e-8
+
+# schedual arguments.
+SCHE:
+  T_max: 3000
+  eta_min: !!float 1e-6
+
+
