@@ -80,11 +80,11 @@ test_in_matlab/spad.m
 #### Testing on Set12 and BSD68(image gray-scale gaussian denoising task) datasets
 - Following the same process above, set the choice of 'SAVE_IMG' to True in test.yml to save the restoration results, and run
 ```
-python test_gassuian.py 
+python test_gaussian.py 
 ```
 - To obtain PSNR/SSIM, run 
 ```
-python evaluate_gassuian.py
+python evaluate_gaussian.py
 ```
 
 ## Results 
